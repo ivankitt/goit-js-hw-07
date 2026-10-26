@@ -13,9 +13,9 @@ loginForm.addEventListener('submit', (event) => {
             password: infoForm.get('password'),
         }
         console.log(userInfo);
+        loginForm.reset();
     } else {
         alert("All form fields must be filled in");
     }
-    loginForm.reset();
 })
 

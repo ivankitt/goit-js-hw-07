@@ -30,9 +30,11 @@ const images = [
 const ulGallery = document.querySelector('.gallery');
 
 
-for (let i = 0; i < 6; i++){
+for (let i = 0; i < images.length; i++){
   const liImgGallery = document.createElement('li');
-  ulGallery.append(liImgGallery);
+  listOfLiG.append(liImgGallery);
   liImgGallery.insertAdjacentHTML('afterBegin', `<img src=${images[i].url} alt=${images[i].alt}>`);
   liImgGallery.classList.add('img-gallery');
 }
+
+ulGallery.append(listOfLiG);
