@@ -30,11 +30,9 @@ const images = [
 const ulGallery = document.querySelector('.gallery');
 
 
-for (let i = 0; i < images.length; i++){
-  const liImgGallery = document.createElement('li');
-  listOfLiG.append(liImgGallery);
-  liImgGallery.insertAdjacentHTML('afterBegin', `<img src=${images[i].url} alt=${images[i].alt}>`);
-  liImgGallery.classList.add('img-gallery');
-}
+const markup = images.map(image => 
+  `<li class="img-gallery"><img src="${image.url}" alt="${image.alt}"></li>`
+).join('');
 
-ulGallery.append(listOfLiG);
+ulGallery.insertAdjacentHTML('beforeend', markup);
+
