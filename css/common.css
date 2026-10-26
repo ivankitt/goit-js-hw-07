@@ -12,3 +12,148 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+address {
+  font-style: normal;
+}
+
+svg {
+  fill: currentColor;
+}
+
+/* 1 task */
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 392px;
+  background-color: #f6f6fe;
+}
+
+.item h2{
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.item ul{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 360px;
+}
+
+.item ul li{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-block: 8px;
+}
+/* End 1 task */
+
+
+/* 2 task */
+.gallery{
+  display: flex;
+  gap: 48px 24px;
+  flex-wrap: wrap;
+  max-width: 1128px;
+  
+}
+
+.img-gallery{
+  width: calc((100% / 3) - 48px);
+  max-height: 300px;
+}
+/* End 2 task */
+
+/* 4 task */
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 360px;
+}
+
+.login-form label{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px; 
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  font-family: var(--font-family);
+}
+
+.login-form button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 8px;
+  padding-block: 8px;
+  padding-inline: 16px;
+  max-width: 86px;
+  /* height: 40px; */
+  background: #4e75ff;
+  font-family: var(--font-family);
+}
